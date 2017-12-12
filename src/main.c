@@ -46,5 +46,5 @@ int main(int argc, char **argv)
 void usage(char* prg_name)
 {
   printf("Usage : %s output_type source_file_name [new_file_name]\n", prg_name);
-  printf("output type : png, jpg\n");
+  printf("output type : %s\n", MAGIC_IMPLEMENTED);
 }
