@@ -3,7 +3,7 @@ Magician is a tool to change MIME type of a file.
 INSTALL : Just run make
 
 Usage : ./magician output_type source_file_name [new_file_name]
-output type : png, jpg, rpm
+output type : png, jpg, zip, rpm
 
 Exemple :
 
