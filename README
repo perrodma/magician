@@ -1,4 +1,14 @@
+Magician is a tool to change MIME type of a file.
+
 INSTALL : Just run make
 
-then to execute :./magician png script.php angel.png
-try it : php angel.png
+Usage : ./magician output_type source_file_name [new_file_name]
+output type : png, jpg
+
+Exemple :
+
+./magician png reverse_tcp.php
+
+will create reverse_tcp.php.png witch contain php code.
+perform file command on this file will print png.
+
