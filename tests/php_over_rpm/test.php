@@ -1,8 +1,4 @@
-PK
-
 <?php
 
 phpinfo();
-
-
 

@@ -38,6 +38,8 @@ int get_type_index(char* magic)
     return 1;
   else if (strcasecmp(magic, "zip") == 0)
     return 2;
+  else if (strcasecmp(magic, "rpm") == 0)
+    return 3;
 
   return -1;
 }
