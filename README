@@ -1,0 +1,4 @@
+INSTALL : Just run make
+
+then to execute :./magician png script.php angel.png
+try it : php angel.png
