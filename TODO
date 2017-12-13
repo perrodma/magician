@@ -1,0 +1,7 @@
+Make system of adding more easy
+Ideas for that :
+  Just have a conf file ?
+  All in a simple #define
+  Use /usr/share/misc/magic.mgc in case of existence to be dynamic ?
+  
+ADD all other MIME TYPE
