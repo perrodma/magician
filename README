@@ -28,4 +28,6 @@ GUIDE ! How to add a custom mime type :
 4/ Increase magic_t lengh by 1 and add new type entry @magic_db.h:4
 5/ Add type case on get_type_index function @magic.c
 6/ Create tests case for type and perform a test with file
+7/ test (Maybe need to recompile with "make distclean && make"
 7/ Pull request on https://github.com/perrodma/magician.git
+
