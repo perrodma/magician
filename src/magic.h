@@ -1,7 +1,7 @@
 #ifndef MAGIC_H
   #define MAGIC_H
 
-#define MAGIC_IMPLEMENTED "png jpg zip rpm"
+#define MAGIC_IMPLEMENTED "png jpg zip rpm gif"
 #define MAX_CODE_SIZE 100
 #define MAGIC_PNG "\x89\x50\x4e\x47\x0d\x0a\x1a\x0a\x00\x00\x00\x0d\x49\x48\x44\x52\x00\x00\x02\x80\x00\x00\x01\xe0\x08\x06\x00\x00\x00\x35\xd1\xdc\xe4\x00\x00\x00\x06\x62\x4b\x47\x44\x00\xff\x00\xff\x00\xff"
 #define MAGIC_PNG_LEN 47
@@ -14,6 +14,9 @@
 
 #define MAGIC_RPM "\xed\xab\xee\xdb"
 #define MAGIC_RPM_LEN 4
+
+#define MAGIC_GIF "\x47\x49\x46\x38\x39\x61"
+#define MAGIC_GIF_LEN 6
 
 typedef struct magic_t {
   char code[MAX_CODE_SIZE];

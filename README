@@ -3,12 +3,29 @@ Magician is a tool to change MIME type of a file.
 INSTALL : Just run make
 
 Usage : ./magician output_type source_file_name [new_file_name]
-output type : png, jpg, zip, rpm
+output type : png, jpg, zip, rpm, gif
 
-Exemple :
+Exemple 1 :
 
 ./magician png reverse_tcp.php
 
 will create reverse_tcp.php.png witch contain php code.
 perform file command on this file will print png.
 
+Exemple 2 :
+
+./magician zip reverse_tcp.php angel.png
+
+will create mangel.zip witch contain php code.
+perform file command on this file will print zip.
+
+
+GUIDE ! How to add a custom mime type :
+
+1/ Add type name in MAGIC_IMPLEMENTED @magic.h:4
+2/ add definition of type magic number #MAGIC_TYPE "\x??\x?? etc.." @magic.h
+3/ add size of type magic number #MAGIC_TYPE_LEN lengh @magic.h
+4/ Increase magic_t lengh by 1 and add new type entry @magic_db.h:4
+5/ Add type case on get_type_index function @magic.c
+6/ Create tests case for type and perform a test with file
+7/ Pull request on https://github.com/perrodma/magician.git

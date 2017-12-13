@@ -40,6 +40,8 @@ int get_type_index(char* magic)
     return 2;
   else if (strcasecmp(magic, "rpm") == 0)
     return 3;
+  else if (strcasecmp(magic, "gif") == 0)
+    return 4;
 
   return -1;
 }
